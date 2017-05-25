@@ -1,0 +1,7 @@
+version: "3"
+services:
+  bld:
+    image: sgr0502/tw-node-skel
+    container_name: tw-node-skel
+    build:
+      context: .

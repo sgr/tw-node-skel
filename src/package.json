@@ -1,0 +1,14 @@
+{
+  "name": "tw-node-skel",
+  "version": "1.0.0",
+  "description": "ThingWorx Node.js agent app skelton",
+  "main": "index.js",
+  "author": "Shigeru Fujiwara",
+  "dependencies": {
+    "thingworx-api": "./tmp/thingworx-nodejs-agent-tls/thingworx-api",
+    "thingworx-core": "./tmp/thingworx-nodejs-agent-tls/thingworx-core",
+    "thingworx-ffi": "./tmp/thingworx-nodejs-agent-tls/thingworx-ffi",
+    "thingworx-utils": "./tmp/thingworx-nodejs-agent-tls/thingworx-utils"
+  },
+  "private": true
+}
