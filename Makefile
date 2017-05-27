@@ -21,14 +21,14 @@ $(TWAPI): $(SDKSRC)
 	docker run -it --rm -v "$(PWD)":/build -w /build $(FROM_IMAGE) $(BUILD_API_SH)
 
 image: $(TWAPI)
-	docker-compose create
+	docker build -t $(TO_IMAGE) .
+
+push: image
+	docker push -t $(TO_IMAGE)
 
 shell: image
 	docker run --rm -it $(TO_IMAGE) /bin/bash
 
-uninstall:
-	-docker-compose down --rm all
-	
 clean:
 	rm -fr $(APIDIR)
 

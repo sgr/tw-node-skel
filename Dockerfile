@@ -23,7 +23,7 @@ RUN set -x \
  && flatten-packages \
  && npm cache clean \
  && apt-get purge -y --auto-remove node-gyp \
- && rm -fr .node-gyp \
- && rm -fr tmp \
+ && rm -frv .node-gyp \
+ && rm -frv tmp \
  && rm -f ${AGENT_SRC_ZIP}
 
