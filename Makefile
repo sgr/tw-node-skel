@@ -24,7 +24,7 @@ image: $(TWAPI)
 	docker build -t $(TO_IMAGE) .
 
 push: image
-	docker push -t $(TO_IMAGE)
+	docker push  $(TO_IMAGE)
 
 shell: image
 	docker run --rm -it $(TO_IMAGE) /bin/bash
